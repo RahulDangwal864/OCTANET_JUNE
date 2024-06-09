@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+    width: 100%;
+}
+
+.top {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(9, 9, 47, 0.812);
+    display: flex;
+    justify-content:space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.top__nav1 {
+    display: flex;
+    align-items: center;  
+}
+
+.top__nav1 > i {
+    padding: 0.6rem;
+}
+
+.top__logo {
+    height: 40px;
+    width: auto;
+    margin-left: 1rem;
+}
+
+.search__bar {
+    margin-left: 2rem;
+    height: 2.2rem;
+    width: 20rem;
+    padding-left: 0.5rem;
+}
+
+.top__nav2 {
+    display: flex;
+}
+
+.top__nav2 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user > i {
+    margin-right: 0.7rem;
+}
+
+.icons, .google i, .twitter i, .linkedin i, .community i{
+    color: #2bddf5;
+    font-size: 1.5em;
+}
+
+.text {
+    color: white;
+}
+
+.middle {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: end;
+    background-color: rgb(26, 26, 37);
+}
+
+.landing__image {
+    position: relative;
+    background-image: url('https://images5.alphacoders.com/133/thumb-1920-1338166.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 70%;
+    height: 70vh; 
+    display: flex; 
+    align-items: end;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.landing__image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgb(26, 26, 37), transparent 50%),
+                linear-gradient(to top, rgb(26, 26, 37), transparent 50%);
+    pointer-events: none;
+}
+
+.landing__content {
+    margin-top: 120px;
+    padding: 30px;
+    align-self: flex-start;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.landing__content > h3 {
+    margin-bottom: 20px;
+}
+
+.landing__content > h1 {
+    font-size: 3.5rem;
+}
+
+.landing_content_details {
+    margin-top: 20px;
+    display: flex;
+    color: #2bddf5;
+}
+
+.landing_content_details > p {
+    margin-right: 20px;
+}
+
+.services__button {
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    width: 150px;
+    padding: 12px;
+    border-radius: 30px;
+    background-color: #2bddf5;
+    cursor: pointer;
+    border: none;
+}
+
+.details__button {
+    font-size: 15px;
+    width: 150px;
+    padding: 12px;
+    border-radius: 30px;
+    background-color:#3a3951;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
