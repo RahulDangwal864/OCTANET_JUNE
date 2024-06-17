@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container1">
+            <div class="logo">
+                <img src="logo.png" alt="To-Do List">
+                <h1><strong>To-Do List</strong></h1>
+            </div>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>Contacts</li>
+                </a>
+                <a href="#">
+                    <li>Sign in</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1 style="color: white; padding: 10px;"><strong>Create Your To-Do List</strong></h1>
+        <div class="task-input">
+            <input type="text" id="task-name" placeholder="Enter a new task">
+            <input type="date" id="due-date">
+            <select id="priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button id="add-task">Add Task</button>
+        </div>
+        <div class="task-categories">
+            <button class="category-button" data-category="all">All</button>
+            <button class="category-button" data-category="work">Work</button>
+            <button class="category-button" data-category="personal">Personal</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

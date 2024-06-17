@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=94,width=1920/cr/landscape_large/adf8b7f0-13fc-462e-890b-57ebd58f8e92.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    top: auto;
+    bottom: auto;
+    z-index: 1;
+    background: transparent;
+    
+}
+
+header .container1{
+    height: 10vh;
+    width: 100%;
+    margin: 20px auto;
+    padding: 40px;
+}
+
+.logo{
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    width: 50px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    height: 20px;
+    color: white;
+}
+
+ul{
+    display: flex;
+    gap: 14px;
+    list-style: none;
+}
+
+li{
+    font-size: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px;
+    padding: 20px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.task-input input, .task-input select, .task-input button {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.task-input button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.task-input button:hover {
+    background-color: #218838;
+}
+
+.task-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.category-button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.category-button:hover {
+    background-color: #0056b3;
+}
+
+#task-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-buttons {
+    display: flex;
+}
+
+.task-buttons button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-buttons .complete-button {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.task-buttons .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.task-buttons .complete-button:hover {
+    background-color: #218838;
+}
+
+.task-buttons .delete-button:hover {
+    background-color: #c82333;
+}
